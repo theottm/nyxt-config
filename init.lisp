@@ -13,7 +13,9 @@
 
 (asdf:load-system :nx-fruit)
 
-(asdf:load-after-system :nx-mapper (nyxt-init-file "~/.config/nyxt/mapper.lisp"))
+;; (asdf:load-system :nx-mapper)
+(load-after-system :nx-mapper (nyxt-init-file "mapper.lisp"))
+
 (define-configuration buffer
   ((default-modes
     (append
